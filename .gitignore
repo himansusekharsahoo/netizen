@@ -1,0 +1,8 @@
+/nbproject/private/
+/assets
+.htaccess
+/application/logs
+/application/config
+/application/modules/cruds
+bower_git_links.txt
+netizen.zip
