@@ -1,5 +1,5 @@
 <?php
-$lang["COMPANY_NAME"] = "Sharada Ayurvedic Medical College & Hospital";
+$lang["COMPANY_NAME"] = "Netizen Software";
 $lang["HEADER_LOGIN"] = "Log In";
 $lang["HEADER_REGI"] = "Registration";
 $lang["HEADER_LOGOUT"] = "Log out";

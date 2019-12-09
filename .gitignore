@@ -1,8 +1,8 @@
-/nbproject/private/
 /assets
 .htaccess
 /application/logs
 /application/config
+/application/cache
 /application/modules/cruds
 bower_git_links.txt
 netizen.zip

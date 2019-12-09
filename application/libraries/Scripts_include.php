@@ -44,7 +44,9 @@ class Scripts_include {
             'top' => array(
                 COMPONENT_PATH . 'ecom/theme/assets/plugins/jquery.min.js',
                 COMPONENT_PATH . 'ecom/theme/assets/plugins/jquery-migrate.min.js',
-                COMPONENT_PATH . 'ecom/theme/assets/plugins/bootstrap/js/bootstrap.min.js'
+                COMPONENT_PATH . 'ecom/theme/assets/plugins/bootstrap/js/bootstrap.min.js',
+                '/assets/text_slider/js/jquery-tweetscroll.js',
+                '/assets/text_slider/js/caroufredsel-carousel.js'
             ),
             'common' => array(
                 COMPONENT_PATH . 'ecom/theme/assets/corporate/scripts/back-to-top.js',
@@ -132,6 +134,10 @@ class Scripts_include {
                 COMPONENT_PATH . 'ecom/theme/assets/corporate/css/themes/red.css',
                 COMPONENT_PATH . 'ecom/theme/assets/corporate/css/custom.css',
                 COMPONENT_PATH . 'ecom/my_ecom.css'
+            ),
+            'text_slider' => array(
+               '/assets/text_slider/style.css',
+                '/assets/text_slider/fdw-demo.css',
             )
         ),
         'default' => array(

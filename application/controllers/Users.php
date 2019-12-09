@@ -41,6 +41,8 @@ class Users extends CI_Controller {
      * @author :
      */
     public function sign_in() {
+        $this->scripts_include->includePlugins(array('text_slider'), 'js');
+        $this->scripts_include->includePlugins(array('text_slider'), 'css');
         if ($this->input->post()) {
             //server side validation
             $rules = array(
@@ -49,7 +51,7 @@ class Users extends CI_Controller {
                     'label' => 'Email',
                     'rules' => 'required',
                     'errors' => array(
-                        'required' => 'Please login with Email/Library Card Number'                        
+                        'required' => 'Please login with Email/Registration Number'                        
                     ),
                 ),
                 array(

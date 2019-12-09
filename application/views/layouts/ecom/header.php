@@ -10,41 +10,16 @@
     .header-navigation > ul > li > a{
         padding: 20px 10px 20px !important;
     }
-    .site-logo {padding-top: 12px !important;padding-bottom: 12px !important; margin-right: 10px !important; }
-    .header-navigation > ul > li > .dropdown-menu{margin-top: -2px !important;}
+    .site-logo {padding-top: 0px !important;padding-bottom: 0px !important; margin-right: 10px !important; }
+    .header-navigation > ul > li > .dropdown-menu{margin-top: -5px !important;}
     .login-text{color:#E02222 !important;}
+    
 </style>
-<!-- BEGIN TOP BAR -->
-<!--<div class="pre-header">
-    <div class="container">
-        <div class="row">
-             BEGIN TOP BAR LEFT PART 
-            <div class="col-md-6 col-sm-6 additional-shop-info">
-                <ul class="list-unstyled list-inline">
-                    <li><i class="fa fa-phone"></i><span><?= $this->lang->line('COMPANY_CONTACT_NO') ?></span></li>
-                    <li><i class="fa fa-envelope-o"></i><span><?= $this->lang->line('COMPANY_INFO_EMAIL') ?></span></li>
-                </ul>
-            </div>
-             END TOP BAR LEFT PART 
-             BEGIN TOP BAR MENU 
-            <div class="col-md-6 col-sm-6 additional-nav">
-                <ul class="list-unstyled list-inline pull-right">
-                                 
-                    
-                </ul>
-            </div>
-             END TOP BAR MENU 
-        </div>
-    </div>        
-</div>-->
-<!-- END TOP BAR -->
-
 <!-- BEGIN HEADER -->
 <div class="header">
     <div class="container">
-        <a class="site-logo" href="<?= base_url('/') ?>">
-            <?= $this->lang->line('COMPANY_NAME') ?>
-            <!--<img src="<?= APP_BASE ?>assets/layouts/ecom/theme/assets/corporate/img/logos/logo-corp-red.png" alt="Metronic FrontEnd">-->
+        <a class="site-logo" href="<?= base_url('/user-login') ?>">
+            <img src="<?= APP_BASE ?>images/logo.jpeg" alt="" style="height:65px; width:75px"><?= $this->lang->line('COMPANY_NAME') ?>            
         </a>
 
         <a href="javascript:void(0);" class="mobi-toggler"><i class="fa fa-bars"></i></a>
@@ -58,7 +33,7 @@
                     if ($this->rbac->is_login(TRUE))
                     {
                         ?>
-                    <li class="dropdown">
+<!--                    <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" data-target="#" href="javascript:;">
                             Programming
                         </a>
@@ -172,7 +147,7 @@
                             <li><a href="blog.html">Blog Page</a></li>
                             <li><a href="blog-item.html">Blog Item</a></li>
                         </ul>
-                    </li>
+                    </li>-->
                     <?php
                     echo '<li><a class="login-text" href="' . base_url('user-logout') . '">' . $this->lang->line('HEADER_LOGOUT') . '</a></li>';
                 } else
