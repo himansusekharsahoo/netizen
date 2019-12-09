@@ -41,6 +41,7 @@ class Users extends CI_Controller {
      * @author :
      */
     public function sign_in() {
+        $this->layout->breadcrumbsFlag=false;
         $this->scripts_include->includePlugins(array('text_slider'), 'js');
         $this->scripts_include->includePlugins(array('text_slider'), 'css');
         if ($this->input->post()) {
